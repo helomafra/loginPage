@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    /* Gradiente feito no figma */
+    background: linear-gradient(227.29deg, #7B08D5, #19BDB3);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-width: 100vw;
+    /* Centralizando */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.container {
+    background: white;
+    /* Largura maxima */
+    min-width: 320px;
+    /* Altura minima */
+    min-height: 40vh;
+    padding: 2rem;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    /* Arredondando a borda */
+    border-radius: 8px;
+}
+
+main h2 {
+    font-weight: 600;
+    margin-bottom: 2rem;
+    /* Deixando o elemento pai como relativo pra deixar as pseudoclasses
+    before e after como absolutas  */
+    position: relative;
+}
+
+main h2::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 25px;
+    bottom: 3px;
+    left: 0;
+    border-radius: 8px;
+    background: linear-gradient(45deg, #7B08D4, #4963C4);
+}
+
+/* main h2::after {
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 24px;
+    bottom: 3px;
+    right: 218px;
+    border-radius: 8px;
+    background: linear-gradient(45deg,#4963C4, #19BDB3);
+} */
+
+/* Para o botao de login ocupar o espaço total*/
+form {
+    display: flex;
+    flex-direction: column ;
+}
+
+.input-field {
+    position: relative;
+}
+
+form .input-field:first-child {
+    margin-bottom: 1.5rem;
+}
+
+.input-field .underline::before{
+    content:'';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+.input-field .underline::after{
+    content:'';
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -5px;
+    left: 0;
+    background: linear-gradient(45deg, #7B08D4, #4963C4);
+    transform: scaleX(0);
+    transition: all .2s ease-in-out;
+    transform-origin: left;
+}
+
+.input-field input:focus ~ .underline::after{
+    transform: scaleX(1);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.input-field input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+form input[type="submit"] {
+    margin-top: 2rem;
+    padding: 0.4rem;
+    background:#5351c7;
+    cursor: pointer;
+    color: white;
+    font-size: 0.10 rem;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+form input[type="submit"]:hover {
+    background: #5f36c7;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.footer span {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.footer .social-field {
+    border-radius: 4px;
+    font-size: 0.85rem;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.footer .social-field a i {
+    margin: 0 0.5rem;
+    width: 15px;
+    
+}
+
+.footer .social-field a {
+    text-decoration: none;
+    color: white;
+    margin: 0.5 1rem ; 
+}
+
+.footer .social-field.twitter {
+    background: linear-gradient(to right, #56a7f2, #468aca);
+    padding: 0.4rem;
+}
+
+.footer .social-field.facebook {
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    padding: 0.4rem;  
+}
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

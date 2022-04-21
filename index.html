@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- Fontes: Kit Font Awsome -->
+    <script src="https://kit.fontawesome.com/b0b4ba0940.js" crossorigin="anonymous"></script>
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Colocar link ico  -->
+</head>
+<body>
+    <main class="container">
+        <!-- Titulo de login -->
+        <h2>Login</h2>
+        <form action="">
+            <!-- Primeiro input para o username -->
+            <div class="input-field">
+                <input type="text" name="username" id="username"
+                    placeholder="Enter your username">
+                <div class="underline"></div>
+            </div>
+            <!-- Segundo input para a senha -->
+            <div class="input-field">
+                <input type="password" name="password" id="password"
+                    placeholder="Enter your password">
+                <div class="underline"></div>
+            </div>
+
+            <!-- Botao de entrar -->
+            <input type="submit" value="Log in">
+        </form>
+       
+        <div class="footer">
+            <span>Or log in with</span>
+            <!-- Div para os campos de conectar com fb ou google -->
+            <div class="social-field">
+                <!-- Para o google -->
+                <div class="social-field twitter">
+                    <a href="#">
+                    <!-- icone do google -->
+                    <i class="fa-brands fa-twitter"></i>
+                     Sign in with Twitter
+                    </a>
+                </div>
+                <!-- Para o fb -->
+                <div class="social-field facebook">
+                    <a href="#">
+                    <!-- icone do fb -->
+                    <i class="fa-brands fa-facebook"></i>
+                    Sign in with Facebook
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
